@@ -45,7 +45,8 @@ $product->type->name }}</td>
 hover:bg-gray-700">Editar</a>
                             <a href="{{ url('/products/delete', ['id' => $product->id])
 }}" class="bg-red-600 text-white px-3 py-1 rounded
-hover:bg-red-700">Excluir</a>
+hover:bg-red-700"
+                                onclick="return confirm('Tem certeza que deseja excluir este produto?')">Excluir</a>
                         </div>
                     </td>
                 </tr>
